@@ -253,6 +253,7 @@ nav ul li a {
    width: 85%;
    height:502px;
  }
+
 .container-exercise-description {
   display: flex;
   flex-direction: column;
@@ -270,7 +271,7 @@ nav ul li a {
 .main-subtitle::after {
   background-color: #E41C26;
   content: ' ';
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
@@ -286,10 +287,81 @@ nav ul li a {
   text-align: center;
   width: 70%;
 }
+
+.exercises-list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.box-exercise {
+  align-items: center;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  min-width: 300px;
+  width: 45%;
+}
+
+.red-hover-thing {
+  background-color: #ff000056;
+  border-radius: 1rem;
+  height: 100%;
+  opacity: 1;
+  width: 100%;
+  transition: .15s;
+}
+
+.box-exercise:hover .red-hover-thing {
+  opacity: 0;
+  transition: .15s;
+}
+
+.box-exercise figure {
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 220px;
+  width: 100%;
+}
+
+.exercise-lebel{
+  color: #E41C26;
+  font-size: 14px;
+  letter-spacing: 1px
+}
+
+.title-exercise {
+ font-size: 22px;
+}
+
+.exercise-description {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 8px 24px 98px -53px #000000bf;
+  -moz-box-shadow: 8px 24px 98px -53px #000000bf;
+  box-shadow: 8px 24px 98px -53px #000000bf;
+  margin-top: -2rem;
+  padding: 1rem;
+  z-index: 1000;
+}
+
 /*  Fin reglas template 1 */
 
 /*  Comienzo reglas template 2 */
 
+
+
+/*  Fin reglas template 2 */
 /*  Comienzo reglas template 3 */
 
 
