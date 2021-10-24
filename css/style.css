@@ -99,6 +99,9 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: #E41C26;
+}
 .search-btn {
   border-left: solid 1px #886e6e;
   padding: 28px;
@@ -396,13 +399,210 @@ nav ul li a {
 
 /*  Fin reglas template 1 */
 
-/*  Comienzo reglas template 2 */
+/*  Comienzo reglas templates 2 */
+.h-float{
+  float: left;
+  background: rgba(0, 0, 0, 0);
+}
+
+.h-container-grid {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr, 2fr, 3fr;
+  grid-template-rows: repeat(4,300px);
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.h-container-progress {
+  grid-column: 1/3;
+  background-color: #222222;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 5%;
+  padding-left: 10%;
+  width: 33.3%;
+}
+.h-container-progress p {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.h-container-workout {
+  grid-column: 3/5;
+  background-color: #EEEEEE;
+  text-align: center;
+  padding-top: 5%;
+  width: 33.3%;
+}
+.h-container-workout h3 {
+  color: #E41C26;
+}
+.h-container-workout p {
+  color: #515151;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.h-container-nutrition {
+  grid-column: 5/7;
+  background-color: #E41C26;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 5%;
+  padding-right: 10%;
+  width: 33.3%;
+  
+}
+.h-container-nutrition p {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.h-bg{
+  height: 700px;
+  background: url("../img/pagina2/fondo-foto.jpg") 50% 0 no-repeat;
+  z-index: 1;
+  float: right;
+  position: relative;
+  left: 12.5%;
+  width: 50%;
+  
+}
+
+.h-bg-image {
+  position: absolute;
+  right: 12.5%;
+  height: 760px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  z-index: 2;
+  
+}
+
+.h-bg-image img {
+  width: 100%;
+  float: left;
+}
+
+.h-item-texto {
+  margin-top: 5%;
+  text-align: left;
+  width: 100%;
+  float: left;
+}
+
+.h-item-texto p {
+  margin-bottom: 5%;
+}
+
+.h-item-texto h2 {
+  font-size: 59px;
+}
+
+.h-item-texto h4 {
+  color: #5E5E5E
+}
+
+.h-item1-section2 {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5%;
+}
+
+.h-imagen-section2 {
+  margin-right: 20px;
+}
+
+.h-item2-section2 {
+  padding-left: 250px;
+  padding-top: 80px;
+}
 
 
+.h-section3{
+  background-color: #242323;
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
 
-/*  Fin reglas template 2 */
+.h-wrapper-section3 {
+  background-color: #242323; 
+  display: flex;
+  justify-content: space-around;
+  float: left;
+  margin:auto;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.h-section3-text {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.h-section3-text h2 {
+  font-size: 59px;
+}
+
+.h-section3-text p {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.h-items-section3 {
+  text-align: center;
+  background-color: #2A2A2A;
+  width: 20%;
+  height: 300px;
+}
+
+.h-items-section3 h4 {
+  font-weight: 900;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+}
+.h-items-section3 p {
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+.h-slider {
+  background-color: #242323;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.h-linea1 {
+  border-bottom: solid 2px white;
+  height: 1px;
+  margin-bottom: 5%;
+  width: 25px;
+  margin: 5px;
+}
+
+.h-active {
+  border-bottom: solid 2px#E41C26;
+}
+/*fin reglas template 2/*
+
 /*  Comienzo reglas template 3 */
-
 
 .black{
   background: black;
@@ -1029,6 +1229,33 @@ footer {
     margin-top: 0;
   }
 
+    /*reglas responsive template 2*/
+    .h-section3{
+      height: auto;
+      
+    }
+    .h-items-section3 {
+      width: 45%;
+      margin-top: 5%;
+      float: left;
+    }
+    .h-item-texto {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: auto;
+    }
+    .h-bg {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: auto;
+    }
+    .h-bg-image {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: auto;
+    }
+    /* termino reglas responsive template 2 */
+
   /*  template 3 */
 
   .e-gym{
@@ -1129,7 +1356,7 @@ footer {
   .people-training {
     display: none;
   }
-  
+
   /* template 1*/
   .column-footer {
     padding: 5px;
