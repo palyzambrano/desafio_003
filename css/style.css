@@ -270,7 +270,7 @@ nav ul li a {
 .main-subtitle::after {
   background-color: #E41C26;
   content: ' ';
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
@@ -291,6 +291,7 @@ nav ul li a {
 /*  Comienzo reglas template 2 */
 
 /*  Comienzo reglas template 3 */
+
 
 .black{
   background: black;
@@ -349,15 +350,15 @@ nav ul li a {
   display: flex;
   justify-content: flex-end;
   align-content: center;
-
+  
 }
 
-.e-imgvit img {
+.e-imgvit img{
   width: 100%;
   height: auto;
 }
 
-.e-boton {
+.e-boton{
   border: white solid 1px;
   padding: 7px 20px;
   list-style: none;
@@ -367,20 +368,20 @@ nav ul li a {
   text-align: center;
 }
 
-.e-boton:hover {
+.e-boton:hover{
   background: red;
 }
 
-/* -- */
+/* ----------------------- */
 
-.subrayado-rojo {
+.subrayado-rojo{
   border-bottom: red solid 5px;
   width: 30%;
   height: 0;
   margin-bottom: 3%;
 }
 
-.e-white {
+.e-white{
   background: white;
   width: 80%;
   margin-left: 10%;
@@ -388,7 +389,7 @@ nav ul li a {
   margin-bottom: 5%;
   float: left;
 }
-.e-frame::before {
+.e-frame::before{
   content: '';
   position: absolute;
   border: red solid 7px;
@@ -398,7 +399,7 @@ nav ul li a {
   height: 738px;
 }
 
-.e-imgprot {
+.e-imgprot{
   position: relative;
   float: left;
   width: 45%;
@@ -409,12 +410,13 @@ nav ul li a {
   background: white;
 }
 
-.e-imgprot img {
+.e-imgprot img{
   width: 100%;
   height: auto;
 }
 
-.e-prottext {
+.e-prottext{
+  
   float: right;
   width: 55%;
   height: 730px;
@@ -425,44 +427,43 @@ nav ul li a {
   align-content: center;
 }
 
-.e-prottext h4 {
+.e-prottext h4{
   margin-top: 5%;
 }
 
-.e-prottext h2 {
+.e-prottext h2{
   font-size: 50px;
   text-align: left;
   width: 100%;
 }
-.e-prottext h3 {
+.e-prottext h3{
   font-size: 59px;
   margin-bottom: 5%;
 }
 
-.e-prottext p {
+.e-prottext p{
   width: 100%;
   margin-bottom: 5%;
   font-size: 20px;
 }
 
-.e-kg {
+.e-kg{
   width: 100%;
   margin: 5% 0;
 }
 
-.e-kg ul {
+.e-kg ul{
   list-style: none;
 }
 
-.e-kg li {
+.e-kg li{
   list-style: none;
   float: left;
   margin-top: 10px;
   display: flex;
   justify-content: center;
 }
-
-.e-kg a {
+.e-kg a{
   text-decoration: none;
   color: gray;
   background-color: lightgray;
@@ -472,13 +473,11 @@ nav ul li a {
   font-size: 16px;
   margin-right: 10px;
 }
-
-.e-kg a:hover {
+.e-kg a:hover{
   color: black;
   background-color: white;
   border: black solid 1px;
 }
-
 .e-blackbtn{
   padding: 7px 20px;
   list-style: none;
@@ -503,7 +502,7 @@ nav ul li a {
   font-size: 18px;
 }
 
-/*--*/
+/*------------*/
 
 .e-center{
   width: 50%;
@@ -656,6 +655,7 @@ nav ul li a {
   color: white;
   border: 0px solid #7E7E7E;
 }
+
 /*  Fin reglas templates 3 */
 
 /*  Comienzo reglas templates 4 */
@@ -909,26 +909,27 @@ footer {
   .browser-container {
     width: 100%;
   }
+  /*  template 3 */
 
-  .e-gym {
+  .e-gym{
     width: 100%;
     justify-content: center;
   }
 
-  .e-kg li {
+  .e-kg li{
     margin-top: 10px;
     display: flex;
     justify-content: center;
   }
 
-  .e-frame::before {
+  .e-frame::before{
     margin-top: calc(105vh - 0px);
     height: 50%;
     width: 60%;
     z-index: 1;
   }
 
-  .e-imgprot {
+  .e-imgprot{
     float: left;
     width: 80%;
     margin-left: 10%;
@@ -937,17 +938,17 @@ footer {
     z-index: 2;
   }
 
-  .e-imgprot img {
+  .e-imgprot img{
     width: 100%;
   }
-
-  .e-prottext {
+ 
+  .e-prottext{
     width: 90%;
     margin-left: 10%;
     margin-right: auto;
   }
 
-  .e-white {
+  .e-white{
     margin-bottom: 10%;
   }
 
