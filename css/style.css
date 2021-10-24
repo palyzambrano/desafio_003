@@ -116,6 +116,10 @@ nav ul li a {
   height: 40px;
   width: 40px;
 }
+.burger-menu-responsive {
+  display: none;
+}
+
 /*  Fin reglas Header */
 
 /*  Comienzo reglas Generales */
@@ -157,6 +161,7 @@ nav ul li a {
   color: #5E5E5E;
   font-size: 16px;
   letter-spacing: 2px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -189,6 +194,7 @@ nav ul li a {
   letter-spacing: 2px;
   padding: 10px 0;
 }
+
 .metric {
   display: flex;
   flex-direction: row;
@@ -235,23 +241,56 @@ nav ul li a {
   left: 140px;
 }
 
+
 .features {
   width: 100%;
   background-color: #111111;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  padding-top: 100px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.features article{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+.features article img {
+  height: 55px;
+  width: auto;
 }
 
 .data {
   color: #ffffff;
+  margin-left: 15px;
  }
 
+ .data h3 {
+  font-size: 44px;
+  line-height: 100%;
+
+ }
+ 
+ .data p{
+   font-size: 18px;
+   font-weight: 400;
+ }
  .advertising {
   display: flex;
   justify-content: flex-end;
+  background-image:;
+  background-size: 10% 50%;
  }
 
  .video-advertising{
    width: 85%;
    height:502px;
+   margin-top: -200px;
  }
 
 .container-exercise-description {
@@ -294,13 +333,13 @@ nav ul li a {
   justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 50px auto;
   width: 90%;
+  flex-wrap: wrap;
 }
 
 .box-exercise {
   align-items: center;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -325,12 +364,12 @@ nav ul li a {
 }
 
 .box-exercise figure {
+  background-image: url(../img/compartidas/exercises.png) ;
   border-radius: 1rem;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 220px;
+  height: 360px;
   width: 100%;
 }
 
@@ -889,10 +928,11 @@ footer {
 .container-left figure{
   display: flex;
   justify-content: center;
-} 
-
+  margin-bottom: 20px;
+}
 .direction {
   display: flex;  
+  align-items: center;
 }
 
 .color-text {
@@ -981,6 +1021,14 @@ footer {
   .browser-container {
     width: 100%;
   }
+
+  /* template 1 */
+  .video-advertising{
+    width: 100%;
+    height: 300px;
+    margin-top: 0;
+  }
+
   /*  template 3 */
 
   .e-gym{
@@ -1043,5 +1091,48 @@ footer {
   .container-right,
   .container-left {
     justify-content: center;
+    margin: 20px auto;
   }
+}
+
+@media only screen and (max-width: 420px) {
+  /* Header*/
+  .browser-container {
+    display: none;
+  }
+
+  .burger-menu-responsive {
+    display: inline-block;
+  }
+
+  .burger-menu-responsive ul li a {
+    font-size: 12px;
+  }
+
+  /* template 1*/
+  .main-title {
+    font-size: 46px;
+    width: 320px;
+  }
+
+  .features {
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  .main-subtitle {
+    font-size: 46px;
+  }
+
+  .people-training {
+    display: none;
+  }
+  
+  /* template 1*/
+  .column-footer {
+    padding: 5px;
+  }
+
 }
